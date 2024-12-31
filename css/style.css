@@ -1,0 +1,753 @@
+/* start general */
+:root {
+    --color-primary: rgb(150 112 77);
+    --color-dark: 57 47 38;
+    --color-header: #392f26;
+    --color-input: #f3eee0;
+    --color-main: #f8f5ec;
+    --color-hover: #96704d;
+}
+
+/* ! start scrollbar */
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--color-main);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 10px;
+    border: 2px solid var(--color-main);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: var(--color-hover);
+}
+
+/* end scrollbar */
+
+body {
+    padding-top: 150px;
+    padding-bottom: 70px;
+    font-family: 'Scheherazade New', serif !important;
+    direction: rtl;
+    user-select: none;
+    background-image: url('../resources/imgs/sky.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+/* end general */
+
+/* start loading screen */
+/* #loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.loader {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.loader:before,
+.loader:after {
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    inset: 0;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3) inset;
+}
+
+.loader:after {
+    box-shadow: 0 2px 0 #FF3D00 inset;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+} */
+/* end loading screen */
+
+
+/* start auth style */
+.inner {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1030;
+}
+
+.btn-style {
+    border: 1px solid rgb(0, 0, 0) !important;
+    background-color: #96704d;
+    --bs-btn-color: white;
+    --bs-btn-border-color: none;
+    --bs-btn-hover-color: rgb(255, 255, 255);
+    --bs-btn-hover-bg: #392f26;
+    --bs-btn-hover-border-color: none;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: none;
+    --bs-btn-active-border-color: none;
+    --bs-btn-disabled-color: none;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: none;
+}
+
+.w-35 {
+    width: 35%;
+}
+
+.auth-link:hover {
+    text-decoration: none;
+}
+
+/* end auth style */
+
+/* start home page */
+.fill-primary {
+    fill: var(--color-primary);
+}
+
+/* ! Home Styles */
+#home {
+    background-image: url(../resources/imgs/islamic-new-year-decoration-with-traditional-food-quran.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+    position: relative;
+}
+
+#home .overlay {
+    background-color: rgba(233, 200, 167, 0.4);
+    position: absolute;
+    inset: 0;
+}
+
+#home h1,
+#main h1 {
+    font-family: Inter, sans-serif;
+    color: var(--color-header);
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#home input {
+    background-color: var(--color-input);
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: var(--color-primary);
+    pointer-events: none;
+}
+
+#searchInput {
+    padding-right: 40px;
+    box-shadow: none;
+    border: 1px solid var(--color-primary);
+}
+
+#searchInput:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+/* ! main styles */
+
+#main,
+#home2 {
+    background-color: var(--color-main);
+}
+
+#main .div1,
+#home2 .guzzSideItem .div1 {
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    color: var(--color-hover);
+    background-color: var(--color-input);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+#main .div1 p,
+.guzzSideItem .div1 p {
+    transform: rotate(-45deg);
+    margin: 0;
+}
+
+#main .item,
+.guzzSideItem {
+    background-color: var(--color-main);
+    border: 1px solid var(--color-primary);
+    padding: 20px;
+}
+
+#main .item:hover {
+    background-color: var(--color-input);
+    border: 0;
+}
+
+.guzzSideItem:hover {
+    background-color: var(--color-input);
+    border: 0;
+}
+
+#main .item:hover .div1,
+.guzzSideItem:hover .div1 {
+    background-color: var(--color-hover);
+    color: var(--color-input);
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.ayah-box {
+    background-color: var(--color-input);
+    border: 1px solid var(--color-primary);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.surah-name {
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.ayah-text {
+    color: rgb(var(--color-dark));
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+.ayah-number {
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 10px 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: var(--color-primary);
+    opacity: 0.5;
+}
+
+/* end home page */
+
+
+/* start navbar */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1030;
+}
+
+.svg-logo {
+    background-color: var(--color-hover);
+    border-radius: 10px;
+}
+
+.nav-item {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logoText {
+    color: var(--color-dark);
+    font-weight: bolder;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+.text-main {
+    color: var(--color-primary);
+}
+
+@media (max-width: 992px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background-color: #fff;
+        z-index: 1050;
+        padding: 10px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .nav-link {
+        padding-right: 15px;
+    }
+
+    .icons {
+        display: inline-block;
+        justify-content: right;
+        text-align: left;
+        padding-left: auto;
+        margin-left: 320px;
+    }
+}
+
+/* end navbar */
+
+
+/* start content */
+#content-container,
+#selector {
+    background-color: rgba(233, 200, 167, 0.4);
+    border: 1px solid rgb(150 112 77);
+}
+
+#selector::-webkit-scrollbar {
+    width: 12px;
+}
+
+#selector::-webkit-scrollbar-track {
+    background: var(--color-main);
+    border-radius: 10px;
+}
+
+#selector::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 10px;
+    border: 2px solid var(--color-main);
+}
+
+#selector::-webkit-scrollbar-thumb:hover {
+    background: var(--color-hover);
+}
+
+#fav-btn {
+    background-color: rgba(233, 200, 167, 0.4);
+    border: 1px solid rgb(150 112 77);
+}
+
+#fav-btn:hover {
+    background-color: var(--color-hover);
+    border: 1px solid var(--color-primary);
+}
+
+/* end content */
+
+
+/* start card */
+.cardHover {
+    transition: 0.25s;
+}
+
+.sheikh-name {
+    height: 35px;
+}
+
+.cardHover:hover {
+    transform: scale(1.03, 1.03);
+}
+
+
+/* end card */
+
+
+/* start audio */
+audio {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+audio:hover,
+audio.playing {
+    border: 4px ridge rgb(150 112 77);
+}
+
+/* end start */
+
+
+/* start surah-text */
+.surah-text {
+    background-color: var(--color-main);
+    height: 500px;
+    overflow-y: scroll;
+    border: 5px double rgb(150 112 77);
+}
+
+.surah-text::-webkit-scrollbar {
+    width: 10px;
+}
+
+.surah-text::-webkit-scrollbar-track {
+    background: var(--color-main);
+    border-radius: 10px;
+}
+
+.surah-text::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 10px;
+    border: 2px solid var(--color-main);
+}
+
+.surah-text::-webkit-scrollbar-thumb:hover {
+    background: var(--color-hover);
+}
+
+.surah-text>p {
+    line-height: 2;
+}
+
+/* end surah-text */
+
+
+/* start azkar */
+.rAzkar {
+    background-color: rgba(255, 239, 167, 0.5);
+    border-radius: 10px;
+    border: 2px solid rgb(150, 112, 77)
+        /* box-shadow: 2px 2px 5px 5px rgba(255, 239, 167, 0.9), -2px -2px 5px 5px rgba(255, 239, 167, 0.9); */
+}
+
+.azkar {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border-radius: 0 30px;
+}
+
+.azkarTitle:hover {
+    color: rgba(255, 239, 167, 0.9);
+    transform: scale(1.1, 1.1);
+}
+
+.azkarTitle {
+    cursor: pointer;
+    transition: 0.5s;
+    color: white
+}
+
+.azkarConenet {
+    background-color: rgba(255, 246, 204, 0.7);
+
+    border-radius: 20px 0 20px 0;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 10px 40px !important;
+}
+
+.azkarConenet:hover {
+    transform: scale(1.01, 1.01);
+    border-radius: 20px;
+}
+
+.modalBg {
+    background-image: url('../resources/imgs/sky.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.modalBg>h2 {
+    color: white !important;
+    font-weight: bolder;
+}
+
+.modal-header {
+    background-color: transparent !important;
+    background-color: rgba(255, 239, 167, 0.5) !important;
+}
+
+/* mesbaha */
+.mesbaha {
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 5px 5px rgba(175, 165, 119, 0.9), -2px -2px 5px 5px rgba(175, 165, 119, 0.9);
+    background-image: url('../resources/imgs/sky.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    padding: 30px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.mesbaha h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2c2c2c;
+}
+
+.counter {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #2c2c2c;
+}
+
+.btn-custom {
+    background-color: #ffffff;
+    color: #2c2c2c;
+    border: 2px solid rgba(255, 239, 167, 0.9);
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #2c2c2c;
+    color: rgba(255, 239, 167, 0.9);
+}
+
+.btn-reset {
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+}
+
+.btn-reset:hover {
+    background-color: #2c2c2c;
+    color: #ff6b6b;
+}
+
+/* end azkar */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ! Home Styles */
+/* #home {
+    background-image: url(../images/islamic-new-year-decoration-with-traditional-food-quran.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+    position: relative;
+}
+
+#home .overlay {
+    background-color: rgba(233, 200, 167, 0.4);
+    position: absolute;
+    inset: 0;
+}
+
+#home h1,
+#main h1 {
+    font-family: Inter, sans-serif;
+    color: #392f26;
+
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+
+
+}
+
+#home input {
+    background-color: #f3eee0;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: var(--color-primary);
+    pointer-events: none;
+}
+
+#searchInput {
+    padding-right: 40px;
+    box-shadow: none;
+    border: 1px solid var(--color-primary);
+}
+
+#searchInput:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+/* ! main styles */
+/* #main {
+    background-color: #f8f5ec;
+}
+
+#main .div1 {
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    color: #96704d;
+    background-color: #f3eee0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+#main .div1 p {
+    transform: rotate(-45deg);
+    margin: 0;
+}
+
+#main .item {
+    background-color: #f8f5ec;
+    border: 1px solid var(--color-primary);
+    padding: 20px;
+}
+
+#main .item:hover {
+    background-color: #f3eee0;
+    border: 0;
+}
+
+#main .item:hover .div1 {
+    background-color: #96704d;
+    color: #f3eee0;
+}  */

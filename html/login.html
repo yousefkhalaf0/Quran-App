@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Website</title>
+    <link rel="stylesheet" href="../css/Normalize.css">
+    <link rel="shortcut icon" href="../resources/imgs/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Lateef&family=Scheherazade+New&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f5ec;
+            background-image: url(../resources/imgs/islamic\ wallpaper.jpg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="w-35 bg-danger mx-auto login">
+        <div
+            class="inner shadow w-35 p-4 rounded-2 d-flex justify-content-center align-items-center my-5 flex-column text-center">
+            <h3 class="py-1">تسجيل دخول</h3>
+            <input type="text" class="form-control my-2" placeholder="ادخل الايميل الخاص بك" id="signEmail">
+            <input type="password" class="form-control my-3" placeholder="ادخل كلمة السر الخاصة بك" id="signPassword">
+            <button class="btn btn-style w-100 my-3" id="loginBtn">تسجيل</button>
+            <div class="mb-5 text-dark">
+                <span class="fs-6">هل ليس لديك حساب؟</span>
+                <a href="../html/signup.html" target="_self" class="fs-6 text-white auth-link">
+                    <small>
+                        إنشاء حساب
+                    </small>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../java script/signin.js"></script>
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

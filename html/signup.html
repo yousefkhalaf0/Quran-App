@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Website</title>
+    <link rel="stylesheet" href="../css/Normalize.css">
+    <link rel="shortcut icon" href="../resources/imgs/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Lateef&family=Scheherazade+New&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f5ec;
+            background-image: url(../resources/imgs/islamic\ wallpaper.jpg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container h-100 signup d-flex justify-content-center align-items-center">
+        <div
+            class="inner p-4 shadow w-50 rounded-2 d-flex justify-content-center align-items-center my-5 flex-column text-center">
+            <h3 class="">إنشاء حساب جديد</h3>
+            <input type="text" oninput="validationName()" class="form-control my-3" placeholder="ادخل اسمك"
+                id="signupName">
+            <div id="messName" class="alert alert-danger d-none">It must includes small & capital characters only</div>
+            <input type="text" class="form-control my-3" placeholder="انشئ الايميل الخاص بك" id="signupEmail"
+                oninput="validationEmail()">
+            <div id="messEmail" class="alert alert-danger d-none">It must includes numbers and small char , end with
+                .com</div>
+            <input type="password" oninput="validationPassword()" class="form-control mt-3"
+                placeholder="انشئ كلمة السر الخاصة بك" id="signupPassword">
+            <div id="messPassword" class="alert alert-danger d-none">It must includes at least 2chars,2digits</div>
+
+            <button class="btn btn-style w-100 my-3" onclick="add()" id="signupBtn">إنشاء</button>
+
+            <div class="text-dark">
+                <span class="fs-6">هل لديك حساب؟</span>
+                <a href="../html/login.html" target="_self" class="fs-6 text-white auth-link">
+                    <small>
+                        تسجيل دخول
+                    </small>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../java script/signup.js"></script>
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
