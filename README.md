@@ -39,7 +39,7 @@ This application was developed as the **final project** for the **JavaScript Cou
 This project was collaboratively developed by:
 - **Yousef Khalaf** ([GitHub: yousefkhalaf0](https://github.com/yousefkhalaf0))
 - **Mahmoud Hassan** ([GitHub: Mahm0ud-HassaN](https://github.com/Mahm0ud-HassaN))
-- **Hagar Saad**
+- **Hagar Saad** ([GitHub: HagarSaad12](https://github.com/HagarSaad12))
 
 ---
 
