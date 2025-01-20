@@ -77,7 +77,3 @@ This project was collaboratively developed by:
 
 ## **License**
 This project is open-source and available under the [MIT License](https://opensource.org/licenses/MIT).
-
----
-
-Feel free to copy, paste, and edit as needed. Let me know if you'd like any modifications or assistance in formatting!
